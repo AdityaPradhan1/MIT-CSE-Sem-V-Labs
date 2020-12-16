@@ -22,7 +22,7 @@ void main(int argc, char* argv[])
     int ret3 = stat(argv[1],&intermediate);
     printf("Number of hard links:%ld\n", intermediate.st_nlink);
     printf("New path:%s\n",new_path);
-    system("ls");
+    system("cat random.txt");
     int ret4 = unlink(argv[1]);
     struct stat ending;
     int ret5 = stat(new_path,&ending);
